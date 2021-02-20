@@ -7,10 +7,14 @@ export default function App() {
     return (
         
     <div className="ui container comments">
-        <ApprovalCard />
         {data.map((comment) => {
+
            return (
+        <ApprovalCard>
+
            <CommentDetail name={comment.name} date={comment.date}message={comment.message}/>
+
+           </ApprovalCard >
            )
         })}
         
