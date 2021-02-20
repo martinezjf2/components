@@ -2,7 +2,7 @@ import React from 'react'
 import faker from 'faker';
 
 
-export default function CommentDetail() {
+export default function CommentDetail(props) {
     return (
         <div className="comment">
             <a href="/" className="avatar" >
@@ -10,12 +10,12 @@ export default function CommentDetail() {
             </a>
         <div className="content">
             <a href="/" className="author">
-                Sam
+                {props.name}
             </a>
             <div className="metadata">
-                <span className="date">Today at 6:00PM</span>
+                <span className="date">{props.date}</span>
             </div>
-            <div className="text">Nice blog post!</div>
+            <div className="text">{props.message}</div>
         </div>
         </div>
     )
