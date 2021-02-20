@@ -3,7 +3,6 @@ import CommentDetail from './CommentDetail';
 import  data  from './data'
 
 export default function App() {
-    console.log(data);
     return (
         
     <div className="ui container comments">
